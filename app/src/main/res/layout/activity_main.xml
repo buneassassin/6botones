@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Botón para Intent Explícito 1 -->
+    <Button
+        android:id="@+id/btnExplicit1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Intent Explícito 1: Abrir Actividad"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintMarginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Botón para Intent Explícito 2 -->
+    <Button
+        android:id="@+id/btnExplicit2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Intent Explícito 2: Enviar Datos"
+        app:layout_constraintTop_toBottomOf="@+id/btnExplicit1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Botón para Intent Explícito 3 -->
+    <Button
+        android:id="@+id/btnExplicit3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Intent Explícito 3: Obtener Resultado"
+        app:layout_constraintTop_toBottomOf="@+id/btnExplicit2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Botón para Intent Implícito 1 -->
+    <Button
+        android:id="@+id/btnImplicit1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:text="Intent Implícito 1: Abrir Navegador"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExplicit3" />
+    <!-- Botón para Intent Implícito 2 -->
+
+    <Button
+        android:id="@+id/btnImplicit3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Intent Implícito 3: Llamar Teléfono"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImplicit2" />
+
+    <Button
+        android:id="@+id/btnImplicit2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Intent Implícito 2: Abrir Cámara"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImplicit1" />
+
+    <!-- Botón para Intent Implícito 3 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
